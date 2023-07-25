@@ -38,8 +38,8 @@ img {
 
 .container {
     max-width: 428px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin-left: auto;
     margin-right: auto;
     
@@ -1010,18 +1010,17 @@ color: var(--white-color, #FFF);
 .confirm-container{
     margin-bottom: 24px;
 }
-@media screen and (min-width: 428px) {
-    .container {
-        max-width: 428px;
-        
-    }
-}
+
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
     }
     .section-menu{
         width: calc((100% - 24px) / 3);
+        
+    }
+    .section-item{
+        gap: 72px;
     }
 }
 
