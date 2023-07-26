@@ -880,7 +880,8 @@ display: block;
         color: var(--white-color);
         font-weight: 500;
         margin-bottom: 16px; 
-        margin-top: 72px;
+        justify-content: center;
+        display: flex;
 }
 .container-logo{
 margin-right: 80px;
@@ -988,7 +989,7 @@ fill: transparent;
 }
 .footer-subscribe{
     flex-grow: 1;
-    margin-left: 80px;
+   
 }
 .footer-subscribe-button{
     width: 165px;
@@ -1021,12 +1022,12 @@ color: var(--white-color, #FFF);
     letter-spacing: 0.02em;
     width: 264px;
     margin-bottom: 16px;
-   display: flex;
-   justify-content: center;
+   margin-right: 166px;
+   margin-left: 166px;
    
 }
 .subscribe-form{
-    display: flex;
+   
     gap: 24px;
 }
 .confirm-container{
@@ -1043,9 +1044,6 @@ color: var(--white-color, #FFF);
     }
     .section-item{
         gap: 72px;
-    }
-    .list-text-workers{
-        text-align: left;
     }
     
 }
