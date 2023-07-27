@@ -58,7 +58,7 @@
          
     </div>
     <div class="mob-menu" data-menu>
-        <button type="button" class="modal-open-btn" data-menu-close>
+        <button type="button" class="modal-open-btn" data-menu-close >
             <svg class="modal-icon" width="8" height="8">
                 <use href="./images/icons.svg#icon-close"></use>
             </svg>
@@ -75,6 +75,19 @@
                 <a href="" class="mob-list link">Contacts</a>
             </li>
         </ul>
+        <address class="mob-address">
+            <ul class="mob-address-info list">
+                <li class="mob-address-list">
+                    <a class="mob-address-link link" href="tel:+110001111111">+11 (000) 111-11-11
+                    </a>
+                </li>
+                <li class="mob-address-list">
+                    <a class="mob-address-link link" href="mailto:info@devstudio.com">info@devstudio.com
+                    </a>
+                </li>
+               
+            </ul>
+        </address>
         </div>
 
 <ul class="mob-socials list">
@@ -190,13 +203,19 @@
 <h2 class="title-describtion"> What are we doing</h2>
 <ul class="doing list">
     <li class="doing-items"> 
-        <img src="./images/img01.jpg" alt="Computer" width="360"/>
+        <img srcset="./images/img01.jpg 1x,
+                      ./images/img-comp-2x.jpg"
+         src="./images/img01.jpg" alt="Computer" width="360"/>
     </li>
     <li class="doing-items">
-        <img src="./images/img20.jpg" alt="Pnone's screen" width="360"/>
+        <img  srcset="./images/img20.jpg 1x,
+                      ./images/Rectangle2x.jpg"
+        src="./images/img20.jpg" alt="Pnone's screen" width="360"/>
     </li>
     <li class="doing-items">
-        <img src="./images/Rectangle71.jpg" alt="Phone" width="360"/>
+        <img srcset="./images/Rectangle71.jpg 1x,
+                      ./images/img-2x.jpg"
+        src="./images/Rectangle71.jpg" alt="Phone" width="360"/>
     </li>
 
 </ul>
@@ -555,8 +574,8 @@ I accept the terms and conditions of the
         </form>
     </div>
     </div>
-    <script src="./js./modal.js"></script>
-    <script src="./js./mobal-menu.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobal-menu.js"></script>
 </body>
 
 </html>
