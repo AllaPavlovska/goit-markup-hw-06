@@ -44,6 +44,11 @@ img {
     margin-right: auto;
     
 }
+ .header-container {
+            display: flex;
+            /* gap: 332px;
+            align-items: center; */
+        }
 
 
 /*index.html*/
@@ -117,7 +122,20 @@ img {
  .logo-text-second{
 color: var(--cloud-color);
  }
+ .header-menu{
+    display: none;
+ }
+ .address-info{
+    display: none;
+ }
+ /* .hamburger{
+    display: flex;
+    
+
+ } */
  
+
+
 .section-solution{
     background-color: var(--navy-color);
     padding-top: 188px;
@@ -947,11 +965,6 @@ color: var(--white-color, #FFF);
     
         }
     
-        .header-container {
-            display: flex;
-            gap: 332px;
-            align-items: center;
-        }
         .logo-item{
     position: relative;
     }
