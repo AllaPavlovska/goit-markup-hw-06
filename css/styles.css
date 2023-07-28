@@ -141,7 +141,7 @@ color: var(--cloud-color);
  /* .hamburger{
     display: flex;
  } */
- 
+
  .mob-menu {
      position: fixed;
      width: 100%;
@@ -149,12 +149,16 @@ color: var(--cloud-color);
      z-index: 10;
      top: 0;
      left: 0;
-     background-color: var(--background-color);
+     background-color: var(--white-color);
      opacity: 0;
      visibility: hidden;
      pointer-events: none;
      transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
          transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+         padding: 40px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
  }
 
 
@@ -178,7 +182,14 @@ color: var(--cloud-color);
                 background-position: center;
                 background-size: cover;
 margin: auto;
-   
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .section-solution {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)), url(../images/phone2x.jpg);
+        }
+    }
     
 }
 .title{
@@ -218,7 +229,6 @@ letter-spacing: 0.02em;
         color: #434455;
        display: flex;
        flex-direction: column;
-        align-content: space-between;
         gap: 24px;
         font-weight: 500;
     
@@ -1035,7 +1045,7 @@ color: var(--white-color, #FFF);
     
         .address-info {
             display: flex;
-            gap: 40px;
+            gap: 12px;
             flex-direction: column;
     
         }
@@ -1046,7 +1056,7 @@ color: var(--white-color, #FFF);
             color: #434455;
             letter-spacing: 0.02em;
             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+            
         }
     
         .address-link:hover,
@@ -1098,14 +1108,8 @@ display: none;
        
     }
     .titlesecond{
-        line-height: 1.2;
-            color: var(--navy-color);
-            font-size: 36px;
-            font-weight: 700;
-            letter-spacing: 0.02em;
-            text-transform: capitalize;
-            margin-bottom: 8px;
-           display: flex;
+      
+           
            align-items: start;
     }
     .team{
@@ -1172,6 +1176,10 @@ justify-content: flex-start;
         padding-left: 15px;
         padding-right: 15px;
     }
+    .address-info{
+        flex-direction: row;
+        gap: 40px;
+    }
     .section-menu{
         width: calc((100% - 24px) / 5);
     }
@@ -1183,6 +1191,12 @@ justify-content: flex-start;
             background-color: var(--cloud-color);
             border-radius: 4px;
             margin-bottom: 8px;
+    }
+    .list-text{
+    
+            
+            font-weight: 400;
+            
     }
     .describtion{
         display: flex;
@@ -1233,30 +1247,14 @@ gap: 24px;
     }
 }
  }
- @media (min-device-pixel-ratio: 2),
- (min-resolution: 192dpi),
- (min-resolution: 2dppx){
-    .section-solution{
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                    rgba(46, 47, 66, 0.7)), url(../images/phone2x.jpg);
-    }
- }
-
-
-
+ 
 
 
 
 .modal-open-btn {
     margin-left: auto;
-    margin-bottom: 231px;
+   
 }
-
-/* .modal-icon {}
-
- .mob-menu-list {}
-
- .list {} */
 
 .mob-item:not(:last-child) {
     margin-bottom: 40px;
@@ -1271,11 +1269,6 @@ gap: 24px;
 
 }
 
-/* .current {}
-
- .link {}
-
- .nav-list {} */
 
 .mob-socials {
     display: flex;
@@ -1305,14 +1298,14 @@ gap: 24px;
 .mob-workers-socials {
     fill: var(--cloud-color);
 }
-
-/* .mob-address {}
-
- .mob-address-info {}
-
- .list {}
-
- .mob-address-list {} */
+/* .mobile-wrap .mob-address{
+    flex-grow: 1;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--main-color);
+} */
 
 .mob-address-link {
 
@@ -1323,5 +1316,3 @@ gap: 24px;
     letter-spacing: 0.02em;
 
 }
-
-/* .link {} */
