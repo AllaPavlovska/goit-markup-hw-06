@@ -98,9 +98,10 @@ img {
         text-transform: uppercase;
         color: var(--button-color);
         display: inline-block;
-        margin-right: 76px;
         padding-top: 26px;
             padding-bottom: 26px;
+            margin-right: 120px;
+           
     }
 
 .logo-footer{
@@ -138,9 +139,7 @@ color: var(--cloud-color);
  .address-info{
     display: none;
  }
- /* .hamburger{
-    display: flex;
- } */
+
 
  .mob-menu {
      position: fixed;
@@ -155,7 +154,10 @@ color: var(--cloud-color);
      pointer-events: none;
      transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
          transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-         padding: 40px;
+         padding-left: 40px;
+         padding-top: 80px;
+         padding-bottom: 40px;
+         padding-right: 40px;
          display: flex;
          flex-direction: column;
          
@@ -231,13 +233,10 @@ letter-spacing: 0.02em;
         color: #434455;
        display: flex;
        flex-direction: column;
-        gap: 24px;
         font-weight: 500;
     
 }
 .list-text-workers{
-   
-    font-size: 16px;
         line-height: 1.5em;
         letter-spacing: 0.02em;
         color: #434455;
@@ -280,8 +279,8 @@ letter-spacing: 0.02em;
 
 .section-describtion{
     background-color: var(--cloud-color);
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 
 }
@@ -337,6 +336,7 @@ margin-bottom: 72px;
     border-radius: 4px;
     margin: 0 auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 16px 32px;
 
    
 }
@@ -358,7 +358,6 @@ padding-bottom: 120px; */
 .section-item{
     display: flex;
    flex-wrap: wrap;
-    /* gap: 24px; */
     gap: 72px;
     
 }
@@ -404,7 +403,6 @@ width: 100%;
     background-color: var(--cloud-color);
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--main-color);
@@ -495,7 +493,6 @@ border: 1px solid transparent;
     position: absolute;
     top: 0;
     left: 0;
-        font-size: 16px;
         height: 100px;
         line-height: 1.5;
         color: var(--cloud-color);
@@ -664,8 +661,10 @@ visibility: hidden;
 pointer-events: none;
 }
 .modal {
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
+    width: 392px;
+        height: 584px;
     padding: 72px 16px 24px 16px;
     position: absolute;
     left: 50%;
@@ -714,7 +713,6 @@ background-color: var(--button-color);
     
 }
 .modal-title{
-        font-size: 16px;
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -808,7 +806,6 @@ border-radius: 4px;
     padding: 16px 32px;
     color: var(--white-color, #FFF);
         text-align: center;
-        font-size: 16px;
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.04em;
@@ -857,7 +854,6 @@ margin-left: 80px;
 } */
 .footer-container{
     display: flex;
-    /* align-items: baseline; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -988,6 +984,7 @@ color: var(--white-color, #FFF);
     letter-spacing: 0.02em;
    width: 264px;
     margin-bottom: 16px;  
+    margin-left: 176px;
 }
 .subscribe-form{
    
@@ -1006,6 +1003,7 @@ color: var(--white-color, #FFF);
 
 @media screen and (min-width: 768px) {
     .modal{
+        
         width: 408px;
         padding: 72px 24px 24px 24px;
 
@@ -1021,7 +1019,6 @@ color: var(--white-color, #FFF);
     }
         .nav-list {
             font-weight: 500;
-            font-size: 16px;
             line-height: 1.5;
             letter-spacing: 0.02em;
             padding-top: 24px;
@@ -1069,10 +1066,17 @@ color: var(--white-color, #FFF);
                 box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
 .list-text{
-  width: 100%;   
+  width: 356px; 
+  height: 72px ; 
+}
+.footer-block-name{
+    margin-left: 0;
 }
 .menu-open{
 display: none;
+border: none;
+    border: 1px solid transparent;
+    
 }
 .current {
     color: var(--button-color);
@@ -1106,7 +1110,7 @@ display: none;
         width: calc((100% - 24px) / 3); 
     }
     .section-item{
-        gap: 72px;
+        gap: 72px 24px;
        
     }
     .titlesecond{
@@ -1122,6 +1126,7 @@ display: none;
             align-items: center;
             flex-wrap: wrap;
             display: flex;
+            gap: 64px 24px;
     }
     
     .customers-item{
@@ -1144,9 +1149,13 @@ justify-content: flex-start;
         justify-content: flex-start;
         margin-top: 0;
        } 
+       .socials-footer{
+        margin-bottom: 0;
+       }
        
        .input-email{
         width: 264px;
+        margin-bottom: 0;
        }
        .footer-subscribe-button{
         margin: 0;
@@ -1158,6 +1167,7 @@ justify-content: flex-start;
        .section-solution{
       background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)), url(../images/tablet.jpg);
+            padding: 112px 136px 204px;
        }
            @media (min-device-pixel-ratio: 2),
            (min-resolution: 192dpi),
@@ -1194,9 +1204,14 @@ justify-content: flex-start;
             border-radius: 4px;
             margin-bottom: 8px;
     }
+    .titlesecond{
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.2;
+            letter-spacing: 0.02em;
+    }
     .list-text{
-    
-            
+       width: 264px;
             font-weight: 400;
             
     }
@@ -1237,15 +1252,25 @@ flex-wrap: nowrap;
 gap: 24px;
 }
 .footer-container{
-   width: 100%;
-        align-items: baseline;
+    width: 100%;
+        align-items: baseline;    
+        gap: unset;
 }
+.container-logo{
+    margin-right: 120px;
+}
+
+.social-media{
+    margin-right: 80px;
+}
+
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .section-solution {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)), url(../images/people-office-2x.jpg);
+
     }
 }
  }
@@ -1281,7 +1306,7 @@ color: var(--button-color);
 .mob-socials {
     display: flex;
     gap: 56px;
-    margin-bottom: 40px;
+    
 }
 
 .mob-socials-item {
