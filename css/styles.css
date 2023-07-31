@@ -171,8 +171,8 @@ color: var(--cloud-color);
 
 .section-solution{
     background-color: var(--navy-color);
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding-top: 112px;
+    padding-bottom: 112px;
     text-align: center;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),url(../images/phone.jpg);
@@ -1065,7 +1065,7 @@ border: none;
         }
     
         .address-link {
-            font-size: 16px;
+            font-size: 12px;
             line-height: 1.5;
             color: #434455;
             letter-spacing: 0.02em;
