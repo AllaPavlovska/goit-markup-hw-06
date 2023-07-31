@@ -207,6 +207,8 @@ letter-spacing: 0.02em;
         font-weight: 700;
         line-height: 1.11;
         letter-spacing: 0.02em;
+        margin: 0 auto;
+        margin-bottom: 48px;
        
 }
 .titlesecond{
@@ -978,12 +980,11 @@ color: var(--white-color, #FFF);
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-   width: 264px;
+  
     margin-bottom: 16px;  
    text-align: center;
 }
 .subscribe-form{
-   
     gap: 24px;
 }
 .confirm-container{
@@ -1116,6 +1117,7 @@ display: none;
         gap: 72px 24px;
        
     }
+    
     .titlesecond{
       
            
@@ -1260,15 +1262,16 @@ gap: 24px;
 }
 .footer-container{
     width: 100%;
-        align-items: baseline;    
-        gap: unset;
+        align-items: baseline;  
+        display: flex;  
+      
 }
 .container-logo{
     margin-right: 120px;
 }
 
-.social-media{
-    margin-right: 80px;
+.footer-subscribe{
+    margin-left: 80px;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -1277,7 +1280,7 @@ gap: 24px;
     .section-solution {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)), url(../images/people-office-2x.jpg);
-
+max-width: 1440px;
     }
 }
  }
