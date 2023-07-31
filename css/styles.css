@@ -179,9 +179,9 @@ color: var(--cloud-color);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin: auto; 
-    /* display: flex;
-    gap: 72px;             */
+    margin: 0 auto; 
+  
+   
 }
 .hero-container{
     display: flex;
@@ -1189,7 +1189,8 @@ justify-content: flex-start;
        .section-solution{
       background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)), url(../images/tablet.jpg);
-            padding: 112px 136px 204px;
+           padding-top: 112px;
+           padding-bottom: 112px;
        }
            @media (min-device-pixel-ratio: 2),
            (min-resolution: 192dpi),
@@ -1299,6 +1300,8 @@ gap: 24px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)), url(../images/people-office-2x.jpg);
 max-width: 1440px;
+padding-top: 112px;
+padding-bottom: 112px;
     }
 }
  }
