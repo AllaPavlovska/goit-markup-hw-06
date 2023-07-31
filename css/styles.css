@@ -197,18 +197,17 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 }
-.title-first{
-    color: var(--white-color);
-   width: 100%;
-    margin: 0 auto;
-    margin-bottom: 48px;
-       text-align: center;
+.title-first{   
+    display: flex;
+        width: 320px;
+        flex-direction: column;
+        color: var(--white-color);
+        text-align: center;
         font-size: 36px;
         font-weight: 700;
         line-height: 1.11;
         letter-spacing: 0.02em;
-        
-    
+       
 }
 .titlesecond{
     line-height: 1.2;
@@ -1341,7 +1340,7 @@ color: var(--button-color);
 }
 .mob-address-tel{
     color: var(--main-color);
-        font-size: 36px;
+        font-size: 24px;
         font-weight: 700;
         line-height: 1.11;
         letter-spacing: 0.02em;
