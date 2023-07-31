@@ -751,7 +751,7 @@ background-color: var(--button-color);
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
             color: var(--white-color);   
             font-size: 12px;
-            margin-bottom: 16px;
+           
 }
 input[type="email"]::placeholder {
     color: #ffffff;
@@ -842,7 +842,7 @@ display: block;
         margin-bottom: 16px; 
         justify-content: center;
         display: flex;
-        margin-top: 72px;
+      
 }
 /* .container-logo{
 margin-right: 80px;
@@ -851,6 +851,7 @@ margin-left: 80px;
 } */
 .footer-container{
     display: flex;
+    gap: 72px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -886,7 +887,7 @@ margin-left: 80px;
     gap: 16px;
     display: inline-flex;
         align-items: flex-start;
-        margin-bottom: 72px;
+       
 }
 .confirm-check-label{
     align-items: center;
@@ -946,6 +947,7 @@ fill: transparent;
 }
 .footer-subscribe{
     flex-grow: 1;
+    align-self: stretch;
     
     
    
@@ -985,7 +987,9 @@ color: var(--white-color, #FFF);
    text-align: center;
 }
 .subscribe-form{
-    gap: 24px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
 }
 .confirm-container{
     margin-bottom: 24px;
@@ -1158,8 +1162,9 @@ justify-content: flex-start;
         justify-content: flex-start;
         margin-top: 0;
        } 
-       .socials-footer{
-        margin-bottom: 0;
+       .subscribe-form{
+        flex-direction: row;
+        gap: 24px;
        }
        
        .input-email{
@@ -1169,7 +1174,6 @@ justify-content: flex-start;
        .footer-subscribe-button{
         margin: 0;
         display: inline-flex;
-           margin-left: 24px;
             justify-content: center;
             align-items: center;
        }
@@ -1262,8 +1266,10 @@ gap: 24px;
 }
 .footer-container{
     width: 100%;
+    gap: 0;
         align-items: baseline;  
         display: flex;  
+        flex-wrap: nowrap;
       
 }
 .container-logo{
