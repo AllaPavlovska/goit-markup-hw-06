@@ -1219,6 +1219,8 @@ justify-content: flex-start;
     }
     .hero-container{
         gap: 48px;
+        padding-top: 188px;
+            padding-bottom: 188px;
     }
     .address-info{
         flex-direction: row;
@@ -1237,6 +1239,7 @@ justify-content: flex-start;
             display: flex;
             flex-direction: column;
             text-align: center;
+            max-width: 496px;
         
     }
     .principles-image{
