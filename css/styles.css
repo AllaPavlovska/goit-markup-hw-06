@@ -1126,6 +1126,12 @@ display: none;
     .section-menu{
         width: calc((100% - 24px) / 2); 
     }
+    .title-first{
+       
+            font-size: 56px;
+            line-height: 1.07;
+            
+    }
     .section-item{
         gap: 72px 24px;
        
@@ -1218,8 +1224,20 @@ justify-content: flex-start;
         flex-direction: row;
         gap: 40px;
     }
+    .address-link{
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    }
     .section-menu{
         width: calc((100% - 24px) / 5);
+    }
+    .title-first{
+        font-size: 56px;
+            line-height: 1.07;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        
     }
     .principles-image{
         display: flex;
@@ -1238,8 +1256,7 @@ justify-content: flex-start;
     }
     .list-text{
        width: 264px;
-            font-weight: 400;
-            
+            font-weight: 400;        
     }
     .describtion{
         display: flex;
