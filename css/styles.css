@@ -1130,6 +1130,7 @@ display: none;
        
             font-size: 56px;
             line-height: 1.07;
+            max-width: 496px;
             
     }
     .section-item{
@@ -1195,8 +1196,8 @@ justify-content: flex-start;
        .section-solution{
       background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)), url(../images/tablet.jpg);
-           padding-top: 112px;
-           padding-bottom: 112px;
+           padding-top: 188px;
+           padding-bottom: 188px;
        }
            @media (min-device-pixel-ratio: 2),
            (min-resolution: 192dpi),
@@ -1219,8 +1220,8 @@ justify-content: flex-start;
     }
     .hero-container{
         gap: 48px;
-        padding-top: 188px;
-            padding-bottom: 188px;
+       
+        
     }
     .address-info{
         flex-direction: row;
@@ -1229,6 +1230,11 @@ justify-content: flex-start;
     .address-link{
     line-height: 1.5;
     letter-spacing: 0.02em;
+    font-size: 16px;
+        
+        
+       
+        
     }
     .section-menu{
         width: calc((100% - 24px) / 5);
@@ -1320,8 +1326,10 @@ gap: 24px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)), url(../images/people-office-2x.jpg);
 max-width: 1440px;
-padding-top: 112px;
-padding-bottom: 112px;
+padding-top: 188px;
+padding-bottom: 188px;
+height: 600px;
+
     }
 }
  }
